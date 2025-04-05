@@ -1,0 +1,68 @@
+esphome:
+  name: camera
+  platform: ESP32
+  board: esp32dev
+
+# Enable logging
+logger:
+
+# Remove if enabling mqtt
+api:
+
+# mqtt doesn't work
+#mqtt:
+#  broker: 192.168.1.141
+#  birth_message:
+#    topic: camera-address
+#    payload: "192.168.1.180:8080"
+#  will_message:
+#    topic: camera-address
+#    payload: "192.168.1.180:8080"
+    
+
+ota:
+  password: "eadd813a0ee36d1160ae8276359b9c0f"
+
+# Dynamic IP failed had to set static ip for the camera
+wifi:
+  ssid: "SSID"
+  password: "Password"
+  manual_ip:
+    static_ip: 192.168.1.180
+    gateway: 192.168.1.1
+    subnet: 255.255.255.0
+  
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Camera Fallback Hotspot"
+    password: "xZEomWhwlTOd"
+
+captive_portal:
+
+
+
+esp32_camera:
+  name: Surveillance
+  external_clock:
+    pin: GPIO0
+    frequency: 20MHz
+  i2c_pins:
+    sda: GPIO26
+    scl: GPIO27
+  data_pins: [GPIO5, GPIO18, GPIO19, GPIO21, GPIO36, GPIO39, GPIO34, GPIO35]
+  vsync_pin: GPIO25
+  href_pin: GPIO23
+  pixel_clock_pin: GPIO22
+  power_down_pin: GPIO32
+  resolution: 640x480
+  jpeg_quality: 10
+
+
+esp32_camera_web_server:
+  - port: 8080
+    mode: stream
+  - port: 8081
+    mode: snapshot
+    
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_login">
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="ee.ut.cs.homesecure.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_action_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ee.ut.cs.homesecure.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="ee.ut.cs.homesecure.ui.map.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/nav_sensor"
+        android:name="ee.ut.cs.homesecure.ui.sensor.SensorFragment"
+        android:label="@string/menu_sensor"
+        tools:layout="@layout/fragment_sensor" />
+    <fragment
+        android:id="@+id/nav_lock"
+        android:name="ee.ut.cs.homesecure.ui.lock.LockFragment"
+        android:label="@string/menu_unlock"
+        tools:layout="@layout/fragment_lock" />
+    <fragment
+        android:id="@+id/nav_camera_feed"
+        android:name="ee.ut.cs.homesecure.ui.camera.CameraFeedFragment"
+        android:label="@string/menu_camera_feed"
+        tools:layout="@layout/fragment_camera_feed" />
+    <fragment
+        android:id="@+id/nav_rfid"
+        android:name="ee.ut.cs.homesecure.ui.rfid.RfidFragment"
+        android:label="@string/menu_rfid"
+        tools:layout="@layout/fragment_rfid" />
+</navigation>

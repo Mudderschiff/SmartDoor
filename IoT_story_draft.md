@@ -1,0 +1,10 @@
+# IoT Story initial draft (previous focus was home security)
+
+## First Story
+
+Gabriel wakes up in the morning with a terrible hangover and realizes that he is really late to mciot class. He gets dressed quickly and runs out from home carrying nothing but his phone and keys. Security system detects that Gabriel has left home. System locks up all doors and windows and turns security/alert mode on/activates security sensors. His phone notifies him that home is now locked.
+In the class he desperately tries to pay attention what the teacher is trying to say and get pass another task. During yet another task, security system notifies that there is movement in the house. He checks video feed from home and suddenly realises that he did not come home alone last night. He deactivates alarm system and unlocks doors by his phone. After some while he receives a message that thanks for the amazing night. He checks again video feed from home and making sure noone is there, he locks the home and turns security back on.
+After exhausting class Gabriel heads back to home to sleep. In the proximity of home, security system unlocks doors and deactivates security sensors/alarms. Finally he is able to hit the bed and fall into oblivion. **(Written by Anti)**
+
+## Second Story
+In a mciot class of University of Tartu, Gabriel is presenting his novel idea about ground-breaking home security system. During the presentation, his phone starts to blink and notifies him that smoke is detected in his home. Apparently, he has left an iron on a sofa that is about to catch fire. Since he cannot react to the alert, the system notifies fire department of the city. Thankfully, firefighters arrive to the site shortly and are able to put down the fire and get rid of the sofa. Thankfully, Gabriel had insurance contract and they were extremely happy that the fire did not do any further damage. Insurance company was so impressed that now every home insurance company refuses to make a deal that does not include home security system. **(Written by Anti)**
